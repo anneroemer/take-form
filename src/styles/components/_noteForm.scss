@@ -1,0 +1,67 @@
+.note-form {
+  //border: 1px solid rgba(210, 207, 207, 0.839);
+  width: 95%;
+  max-width: 500px;
+  padding: 2%;
+  border-radius: 6px;
+  &-header {
+    gap: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &-block {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2%;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(184, 183, 183);
+  }
+  &-textinput {
+    //all: unset;
+    padding: 4px 6px;
+    border-radius: 4px;
+    min-height: 36px;
+    border: 1px solid rgba(210, 207, 207, 0.839);
+    &:focus {
+      outline: 2px solid #2684ff;
+      border: none;
+    }
+  }
+  &-textarea {
+    //all: unset;
+    padding: 4px 6px;
+    border-radius: 4px;
+    min-height: 300px;
+    border: 1px solid rgba(210, 207, 207, 0.839);
+    &:focus {
+      outline: 2px solid #2684ff;
+      border: none;
+    }
+  }
+}
+.note-form-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.note-form-btn {
+  all: unset;
+  width: 3rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(184, 183, 183);
+  &:first-of-type {
+    background-color: cornflowerblue;
+  }
+  &-link {
+    color: #fff;
+  }
+}

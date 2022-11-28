@@ -1,3 +1,8 @@
+# External code
+
+The Notes page is heavily based on this tutorial by WebDevSimplified:
+[The Perfect Advanced React/TypeScript Project - Markdown Supported Note Taking With Categories](https://www.youtube.com/watch?v=j898RGRw0b4).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

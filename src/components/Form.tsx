@@ -15,20 +15,18 @@ const Form = (props: { config: any }) => {
         <form className="my-form" onSubmit={props.handleSubmit}>
           {config.form?.map((field: any, index: number) => (
             <div key={index} className="my-form-field-container">
-              <div>
-                <label className="my-form-field-label" htmlFor={field.id}>
-                  {field.label}
-                </label>
-                <input
-                  className="my-form-field-input"
-                  type={field.type}
-                  id={field.id}
-                  value={props.values.field}
-                  placeholder={field?.initialValue}
-                  onChange={props.handleChange}
-                  //onChange={(val) => props.setFieldValue(config.id, val, true)}
-                />
-              </div>
+              <label className="my-form-field-label" htmlFor={field.id}>
+                {field.label}
+              </label>
+              <input
+                className="my-form-field-input"
+                type={field.type}
+                id={field.id}
+                value={props.values.field}
+                placeholder={field?.initialValue}
+                onChange={props.handleChange}
+                onBlur={props.handleBlur}
+              />
               <>
                 {props?.errors[field.id] ? (
                   <div className="my-form-errormsg">
@@ -39,7 +37,9 @@ const Form = (props: { config: any }) => {
             </div>
           ))}
 
-          <button type="submit">submit</button>
+          <button className="my-form-submit-btn" type="submit">
+            submit
+          </button>
         </form>
       )}
     </Formik>

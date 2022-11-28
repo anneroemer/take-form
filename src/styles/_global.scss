@@ -10,3 +10,17 @@ body {
   height: 100%;
   font-family: Helvetica, sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+.page-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-headline {
+  color: cornflowerblue;
+}
